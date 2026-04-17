@@ -1,36 +1,65 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: RevealUIStudio
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  # Marketing site (revealui.com — update URL once deployed)
+  - name: Website
+    url: https://revealui.com
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  # API health endpoint
+  - name: API
+    url: https://api.revealui.com/health
+    expectedStatusCodes:
+      - 200
+
+  # Admin dashboard
+  - name: Admin
+    url: https://admin.revealui.com
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  # License validation endpoint (critical for Track C perpetual customers)
+  - name: License Service
+    url: https://api.revealui.com/api/license/verify
+    method: HEAD
+    expectedStatusCodes:
+      - 200
+      - 401
+      - 405
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Use GitHub Pages URL until custom domain is configured
+  # To use status.revealui.com: uncomment cname, add CNAME DNS record pointing to RevealUIStudio.github.io
+  # cname: status.revealui.com
+  baseUrl: /status
+  logoUrl: https://raw.githubusercontent.com/RevealUIStudio/revealui/test/apps/marketing/public/favicon.svg
+  name: RevealUI Status
+  introTitle: "**RevealUI** system status and uptime history."
+  introMessage: "Real-time monitoring powered by [Upptime](https://github.com/upptime/upptime). Incidents are tracked as [GitHub Issues](https://github.com/RevealUIStudio/status/issues)."
   navbar:
     - title: Status
       href: /
+    - title: RevealUI
+      href: https://revealui.com
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  theme: light
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Check every 5 minutes (default). Public repo = unlimited GitHub Actions minutes.
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: "0 0 * * *"
+  staticSite: "0 1 * * *"
+
+# Open GitHub Issues on outages, assign to founder
+assignees:
+  - joshua-v-dev
+
+# Notifications: email via GitHub issue notifications (free).
+# Add Slack/Discord webhook later if needed.
