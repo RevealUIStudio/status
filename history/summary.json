@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 292,
-    "timeDay": 292,
-    "timeWeek": 292,
-    "timeMonth": 292,
-    "timeYear": 292,
+    "time": 569,
+    "timeDay": 569,
+    "timeWeek": 569,
+    "timeMonth": 569,
+    "timeYear": 569,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 4899,
-    "timeDay": 4899,
-    "timeWeek": 4899,
-    "timeMonth": 4899,
-    "timeYear": 4899,
+    "time": 4957,
+    "timeDay": 4957,
+    "timeWeek": 4957,
+    "timeMonth": 4957,
+    "timeYear": 4957,
     "dailyMinutesDown": {}
   },
   {
@@ -46,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 961,
-    "timeDay": 961,
-    "timeWeek": 961,
-    "timeMonth": 961,
-    "timeYear": 961,
+    "time": 3198,
+    "timeDay": 3198,
+    "timeWeek": 3198,
+    "timeMonth": 3198,
+    "timeYear": 3198,
     "dailyMinutesDown": {}
   },
   {
@@ -59,18 +59,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/api.revealui.com.ico",
     "slug": "license-service",
     "status": "down",
-    "uptime": "8.90%",
-    "uptimeDay": "8.90%",
-    "uptimeWeek": "8.90%",
-    "uptimeMonth": "8.90%",
-    "uptimeYear": "8.90%",
-    "time": 166,
-    "timeDay": 166,
-    "timeWeek": 166,
-    "timeMonth": 166,
-    "timeYear": 166,
+    "uptime": "0.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.00%",
+    "uptimeMonth": "0.00%",
+    "uptimeYear": "0.00%",
+    "time": 239,
+    "timeDay": 239,
+    "timeWeek": 239,
+    "timeMonth": 239,
+    "timeYear": 239,
     "dailyMinutesDown": {
-      "2026-04-17": 0
+      "2026-04-18": 127,
+      "2026-04-17": 1311
     }
   }
 ]
