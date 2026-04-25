@@ -22,18 +22,20 @@
     "url": "https://api.revealui.com/health",
     "icon": "https://icons.duckduckgo.com/ip3/api.revealui.com.ico",
     "slug": "api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 3367,
-    "timeDay": 4724,
-    "timeWeek": 2913,
-    "timeMonth": 3367,
-    "timeYear": 3367,
-    "dailyMinutesDown": {}
+    "time": 3888,
+    "timeDay": 6649,
+    "timeWeek": 3621,
+    "timeMonth": 3888,
+    "timeYear": 3888,
+    "dailyMinutesDown": {
+      "2026-04-25": 0
+    }
   },
   {
     "name": "Admin",
@@ -70,7 +72,7 @@
     "timeMonth": 200,
     "timeYear": 200,
     "dailyMinutesDown": {
-      "2026-04-25": 129,
+      "2026-04-25": 324,
       "2026-04-24": 1440,
       "2026-04-23": 1440,
       "2026-04-22": 1440,
