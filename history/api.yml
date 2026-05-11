@@ -1,7 +1,7 @@
 url: https://api.revealui.com/health
-status: up
-code: 200
-responseTime: 5563
-lastUpdated: 2026-05-10T23:45:08.781Z
+status: down
+code: 500
+responseTime: 4865
+lastUpdated: 2026-05-11T20:21:34.392Z
 startTime: 2026-04-17T02:08:50.536Z
 generator: Upptime <https://github.com/upptime/upptime>
