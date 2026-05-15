@@ -1,7 +1,7 @@
 url: https://api.revealui.com/api/license/verify
 status: down
-code: 0
-responseTime: 0
-lastUpdated: 2026-05-14T23:53:38.820Z
+code: 500
+responseTime: 130
+lastUpdated: 2026-05-15T23:51:52.532Z
 startTime: 2026-04-17T02:08:57.090Z
 generator: Upptime <https://github.com/upptime/upptime>
