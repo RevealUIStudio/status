@@ -24,9 +24,11 @@ sites:
       - 301
       - 302
 
-  # License validation endpoint (critical for Track C perpetual customers)
+  # License service liveness (critical for Track C perpetual customers).
+  # Probes the GET-able /features route: the verify/generate endpoints are
+  # POST-with-body, so a HEAD/GET uptime check can only ever 404 on them.
   - name: License Service
-    url: https://api.revealui.com/api/license/verify
+    url: https://api.revealui.com/api/license/features
     method: HEAD
     expectedStatusCodes:
       - 200
