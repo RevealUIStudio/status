@@ -1,6 +1,22 @@
 owner: RevealUIStudio
 repo: status
 
+# Template sync retired 2026-07-25 (GAP-420). Both .github/workflows/update-template.yml
+# (weekly) and .github/workflows/setup.yml ("Setup CI", triggered on .upptimerc.yml
+# change) were deleted: both run upptime/uptime-monitor `update-template`, which pushes
+# regenerated workflow files back to the repo. The default GITHUB_TOKEN can never write
+# .github/workflows/* files (a GitHub platform restriction, not a settable permission),
+# so both had failed every run since at least 2026-07-05. Fixing them forward would need a PAT
+# with Workflows: write, which would hand a daily unattended cron running
+# upptime/uptime-monitor@master (a floating third-party ref) the power to rewrite
+# every workflow file in this repo and push straight to master with no review — not
+# a durable security posture for a repo whose monitoring is otherwise healthy.
+# Upptime template upgrades (new workflow versions, config schema changes) are now a
+# deliberate manual event: diff this repo's .github/workflows/ against a fresh
+# `npx @upptime/config-check` or the current release at
+# https://github.com/upptime/upptime/releases when you want to pull in a template
+# update, and re-apply by hand.
+
 sites:
   # Marketing site (revealui.com — update URL once deployed)
   - name: Website
