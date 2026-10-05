@@ -1,3 +1,3 @@
 # Later edits to this file and to workflows require review from either owner.
-/.github/CODEOWNERS @joshua-v-dev @RevealUIStudio
-/.github/workflows/ @joshua-v-dev @RevealUIStudio
+/.github/CODEOWNERS @RevealUIStudio
+/.github/workflows/ @RevealUIStudio
