@@ -1,4 +1,4 @@
-owner: RevealUIStudio
+owner: revealui-studio
 repo: status
 
 # Template sync retired 2026-07-25 (GAP-420). Both .github/workflows/update-template.yml
@@ -53,13 +53,13 @@ sites:
 
 status-website:
   # Use GitHub Pages URL until custom domain is configured
-  # To use status.revealui.com: uncomment cname, add CNAME DNS record pointing to RevealUIStudio.github.io
+  # To use status.revealui.com: uncomment cname, add CNAME DNS record pointing to https://revealui-studio.github.io/status
   # cname: status.revealui.com
   baseUrl: /status
   logoUrl: https://raw.githubusercontent.com/RevealUIStudio/revealui/test/apps/marketing/public/favicon.svg
   name: RevealUI Status
   introTitle: "**RevealUI** system status and uptime history."
-  introMessage: "Real-time monitoring powered by [Upptime](https://github.com/upptime/upptime). Incidents are tracked as [GitHub Issues](https://github.com/RevealUIStudio/status/issues)."
+  introMessage: "Real-time monitoring powered by [Upptime](https://github.com/upptime/upptime). Incidents are tracked as [GitHub Issues](https://github.com/revealui-studio/status/issues)."
   navbar:
     - title: Status
       href: /
