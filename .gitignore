@@ -1,0 +1,2 @@
+# Local fallback for scripts/check-client-leaks.sh. Never commit pattern lines.
+.client-name-watchlist.local

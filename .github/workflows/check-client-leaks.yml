@@ -1,6 +1,6 @@
 name: Client Name Leak Scan
 
-# Thin caller — shared composite action. Job name preserved for rulesets.
+# Thin caller. Shared composite action. Job name preserved for rulesets.
 
 on:
   push:
@@ -19,3 +19,5 @@ jobs:
     timeout-minutes: 3
     steps:
       - uses: RevealUIStudio/.github/.github/actions/check-client-leaks@8ea1ca5697dfc1f2041aac1368a9dd6d241121ab
+        with:
+          client_leak_patterns: ${{ secrets.CLIENT_LEAK_PATTERNS }}
